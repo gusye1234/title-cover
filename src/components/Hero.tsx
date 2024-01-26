@@ -1,4 +1,6 @@
 import React from 'react';
+import Logo from '@/../public/logo.png';
+import Image from 'next/image';
 
 const Background = () => {
   return (
@@ -18,9 +20,12 @@ const Hero = () => {
   return (
     <div className="relative">
       <div className="text-center w-full">
-        <h2 className="text-3xl font-bold sm:text-4xl">Cover Generate</h2>
+        <h2 className="text-3xl font-bold sm:text-4xl flex flex-row justify-center items-center gap-1">
+          <Image src={Logo} alt="Title Cover" width={50} height={50} />
+          Cover Generate
+        </h2>
 
-        <p className="mt-4 text-zinc-500">
+        <p className=" text-zinc-500">
           Generate your cover for the title with few clicks
         </p>
       </div>
